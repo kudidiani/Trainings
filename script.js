@@ -58,4 +58,33 @@
 // console.log(message2);
 
 const myAge = 17;
-const hasAccess = 
+const hasAccess = myAge >= 18; /* hasAccess true or false 
+                                  or vice versa !(myAge >= 18)  !=NOT*/
+console.log(hasAccess);
+if(hasAccess){ // if hasAccess true
+    console.log('Access granted')
+}
+else{ // if hasAccess false 
+    console.log(' Access denied')
+
+};
+
+console.log('Access only for people with costumes')
+clientCostume = false;
+access = clientCostume === true;// === equally 
+if (access){
+    console.log('Welcome!');
+}
+else {
+    console.log('Not today!')
+}
+
+console.log('World community');
+let country = 'Russia';
+let worldAccess = country !== 'Russia'; //!== not equally
+if (worldAccess) { // (!worldAccess) vice verse   ! equally NOT
+    console.log('Good country!');
+}
+else {
+    console.log('Fuch russia');
+};
