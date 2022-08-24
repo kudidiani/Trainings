@@ -57,34 +57,49 @@
 // console.log(message);
 // console.log(message2);
 
-const myAge = 17;
-const hasAccess = myAge >= 18; /* hasAccess true or false 
-                                  or vice versa !(myAge >= 18)  !=NOT*/
-console.log(hasAccess);
-if(hasAccess){ // if hasAccess true
-    console.log('Access granted')
-}
-else{ // if hasAccess false 
-    console.log(' Access denied')
+// const myAge = 17;
+// const hasAccess = myAge >= 18; /* hasAccess true or false 
+//                                   or vice versa !(myAge >= 18)  !=NOT*/
+// console.log(hasAccess);
+// if(hasAccess){ // if hasAccess true
+//     console.log('Access granted')
+// }
+// else{ // if hasAccess false 
+//     console.log(' Access denied')
 
-};
+// };
 
-console.log('Access only for people with costumes')
-clientCostume = false;
-access = clientCostume === true;// === equally 
-if (access){
-    console.log('Welcome!');
-}
-else {
-    console.log('Not today!')
-}
+// console.log('Access only for people with costumes')
+// clientCostume = false;
+// access = clientCostume === true;// === equally 
+// if (access){
+//     console.log('Welcome!');
+// }
+// else {
+//     console.log('Not today!')
+// }
 
-console.log('World community');
-let country = 'Russia';
-let worldAccess = country !== 'Russia'; //!== not equally
-if (worldAccess) { // (!worldAccess) vice verse   ! equally NOT
-    console.log('Good country!');
-}
-else {
-    console.log('Fuch russia');
-};
+// console.log('World community');
+// let country = 'Russia';
+// let worldAccess = country !== 'Russia'; //!== not equally
+// if (worldAccess) { // (!worldAccess) vice verse   ! equally NOT
+//     console.log('Good country!');
+// }
+// else {
+//     console.log('Fuch russia');
+// };
+
+//want to buy alcohol
+let cashInWallet = 50;
+let age = 25;
+
+let price = 40
+const ageLimit = 18; 
+
+const enoughMoneyToBuy = cashInWallet >= price;// you can buy if you have enough money
+const allowedToBuyAlkohol = age >= ageLimit; // you can buy Alcohol if you are older than 18
+/* OR && 
+if we have several conditions and ALL of them are required*/
+const canBuy = enoughMoneyToBuy && allowedToBuyAlkohol /* you can make a purchase of alcohol 
+if you have enough money AND (&&) if you are older than 18 */
+console.log(canBuy);
