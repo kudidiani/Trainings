@@ -56,3 +56,6 @@
 // it is called interpolation */
 // console.log(message);
 // console.log(message2);
+
+const myAge = 17;
+const hasAccess = 
