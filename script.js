@@ -89,17 +89,28 @@
 //     console.log('Fuch russia');
 // };
 
-//want to buy alcohol
-let cashInWallet = 50;
-let age = 25;
+// //want to buy alcohol
+// let cashInWallet = 50;
+// let age = 25;
 
-let price = 40
-const ageLimit = 18; 
+// let price = 40
+// const ageLimit = 18; 
 
-const enoughMoneyToBuy = cashInWallet >= price;// you can buy if you have enough money
-const allowedToBuyAlkohol = age >= ageLimit; // you can buy Alcohol if you are older than 18
-/* OR && 
-if we have several conditions and ALL of them are required*/
-const canBuy = enoughMoneyToBuy && allowedToBuyAlkohol /* you can make a purchase of alcohol 
-if you have enough money AND (&&) if you are older than 18 */
+// const enoughMoneyToBuy = cashInWallet >= price;// you can buy if you have enough money
+// const allowedToBuyAlkohol = age >= ageLimit; // you can buy Alcohol if you are older than 18
+// /* OR && 
+// if we have several conditions and ALL of them are required*/
+// const canBuy = enoughMoneyToBuy && allowedToBuyAlkohol /* you can make a purchase of alcohol 
+// if you have enough money AND (&&) if you are older than 18 */
+// console.log(canBuy);
+
+
+//want make a purchase by card OR cash
+let cashInWallet = 10;
+let cardAmount = 280;
+const price = 40;
+
+const canPayWithCard = cardAmount >= price;
+const canPayByCash = cashInWallet >= price;
+const canBuy = canPayWithCard || canPayByCash; // have enough cash OR have enough money on the card
 console.log(canBuy);
