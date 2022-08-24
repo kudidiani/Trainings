@@ -44,14 +44,15 @@
 //  let rectangleArea = a*b;
 //  console.log('The area of the',figure, 'is:',rectangleArea);
 
-const myName = 'Diana';
-let myAge = 19;
-myAge = myAge + 1;//21
-let message = myName + ' is ' + myAge; // concatenation
+// const myName = 'Diana';
+// let myAge = 19;
+// myAge = myAge + 1;//21
+// let message = myName + ' is ' + myAge; // concatenation
 
-let message2 = `${myName} 
-is ${myAge + 3}`;  /*Diana
-                     is 23 */
-//  Back quotes for  put `${} ... ` number in string and saves formatting 
-console.log(message);
-console.log(message2);
+// let message2 = `${myName} 
+// is ${myAge + 3}`;  /*Diana
+//                      is 23 */
+// /*  Back quotes for  put `${} ... ` number in string and saves formatting 
+// it is called interpolation */
+// console.log(message);
+// console.log(message2);
